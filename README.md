@@ -6,9 +6,6 @@ Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 
 The examples from the paper: 
 
-<div align="center">
-  <img src="examples.jpg" width = "766" height = "282" alt="examples" align=center />
-</div>
 
 ## preequirements
 
@@ -35,6 +32,29 @@ $ python3 train.py --dataset facades --nEpochs 100 --cuda
 ```console
 $ python3 test.py --dataset facades --model checkpoint/facades/netG_model_epoch_200.pth --cuda
 ```
+
+## Examples
+
+### 白黒写真に色を付ける
+夏＋花のデータセットを用いて、学習します
+**Download**  
+```console
+$ wget https://www.dropbox.com/s/yhstjhqmsy1cneb/grayscale.zip?dl=0
+$ mv grayscale.zip
+$ cd dataset 
+$ unzip grayscale.zip
+```
+**train dataset**
+```console
+$ python3 train.py --dataset grayscale --nEpochs 100 --cuda
+```
+
+**train dataset**
+```console
+$ python3 test.py --dataset grayscale --model checkpoint/grayscale/netG_model_epoch_100.pth --cuda
+```
+
+**example output**  
 
 ## Acknowledgments
 
