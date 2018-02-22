@@ -9,7 +9,6 @@ The examples from the paper:
 
 ## preequirements
 
-- Linux
 - Python3 with numpy
 - cuda
 - pytorch
