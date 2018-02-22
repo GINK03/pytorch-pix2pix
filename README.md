@@ -54,6 +54,9 @@ $ python3 test.py --dataset grayscale --model checkpoint/grayscale/netG_model_ep
 ```
 
 **example output**  
+<div align="center">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36538393-9d411e2c-1816-11e8-9ba1-f46298113e69.png">
+</div>
 
 ## Acknowledgments
 
