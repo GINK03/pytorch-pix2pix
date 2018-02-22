@@ -8,7 +8,7 @@ The examples from the paper:
 
 <img src="examples.jpg" width = "766" height = "282" alt="examples" align=center />
 
-## rrequirements
+## preequirements
 
 - Linux
 - Python3 with numpy
