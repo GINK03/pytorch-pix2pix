@@ -1,0 +1,29 @@
+2015-03-04  Nobuto Murata  <nobuto@ubuntu.com>
+
+	* Update base fonts as of today:
+	  Takao Fonts - 00303.01
+	  Takao Ex Fonts - 00201.01
+	* Add Mj Fonts:
+	  Takao Mj Fonts - 00301.01
+	* Add maintenance tasks into build scripts
+	* Fix typo in Styles (SubFamily) string
+
+2010-03-05  Jun Kobayashi  <jkbys@ubuntu.com>
+
+	* Update Takao Fonts based on newly released IPA Fonts ver.003.02 and 
+	  IPAex Fonts ver.001.01.
+	* Refine ipa2takao.sh for the IPA Fonts Ver.003.02 and IPAex Fonts 
+	  Ver.001.01.
+
+2010-02-14  Jun Kobayashi  <jkbys@ubuntu.com>
+
+	* Add modifying width of .notdef to 500 to print well with JMA Receipt 
+	  Software.
+
+2010-02-08  Jun Kobayashi  <jkbys@ubuntu.com>
+
+	* Create ipa2takao.sh for generating Takao Fonts.
+	  This script is based on fixwidth.sh included in ttf-orcafont released 
+	  by Good-Day, Inc. Thanks!
+	* Write README and README.ja
+	* Generate Takao Fonts with ipa2takao.sh script.
