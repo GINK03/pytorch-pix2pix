@@ -149,5 +149,5 @@ def checkpoint(epoch):
 for epoch in range(1, opt.nEpochs + 1):
   train(epoch)
   test()
-  if epoch % 50 == 0:
+  if epoch % 10 == 0:
     checkpoint(epoch)
