@@ -1,42 +1,87 @@
-# pix2pix-pytorch
+# pytorch-pix2pix
 
-PyTorch implementation of [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf).
+A fork of PyTorch implementation of [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf).
 
 Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 
 The examples from the paper: 
 
-<img src="examples.jpg" width = "766" height = "282" alt="examples" align=center />
 
-## Prerequisites
+## preequirements
 
-+ Linux
-+ Python with numpy
-+ NVIDIA GPU + CUDA 8.0 + CuDNNv5.1
-+ pytorch
-+ torchvision
+- Python3 with numpy
+- cuda
+- pytorch
+- torchvision
 
 ## Getting Started
 
-+ Clone this repo:
+**git clone**  
+```console
+$ git clone https://github.com/GINK03/pytorch-pix2pix
+$ cd pix2pix-pytorch
+```
 
-    git clone git@github.com:mrzhu-cool/pix2pix-pytorch.git
-    cd pix2pix-pytorch
+**train dataset**
+```console
+$ python3 train.py --dataset facades --nEpochs 100 --cuda
+```
 
-+ Get dataset
+**train dataset**
+```console
+$ python3 test.py --dataset facades --model checkpoint/facades/netG_model_epoch_200.pth --cuda
+```
 
-    unzip dataset/facades.zip
+## Examples
 
-+ Train the model:
+### 白黒写真に色を付ける
+夏＋花のデータセットを用いて、学習します
+**Download**  
+```console
+$ wget https://www.dropbox.com/s/yhstjhqmsy1cneb/grayscale.zip
+$ mv grayscale.zip dataset
+$ cd dataset 
+$ unzip grayscale.zip
+```
+**train dataset**
+```console
+$ python3 train.py --dataset grayscale --nEpochs 100 --cuda
+```
 
-    python train.py --dataset facades --nEpochs 200 --cuda
+**train dataset**
+```console
+$ python3 test.py --dataset grayscale --model checkpoint/grayscale/netG_model_epoch_100.pth --cuda
+```
 
-+ Test the model:
+**example output**  
+<div align="center">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36538393-9d411e2c-1816-11e8-9ba1-f46298113e69.png">
+</div>
 
-    python test.py --dataset facades --model checkpoint/facades/netG_model_epoch_200.pth --cuda
+### ノイズや欠落情報を復元する
+"自然"のデータセットに対して、ノイズを乗せて復元を試みます  
+**Download** 
+```console
+$ wget https://www.dropbox.com/s/1yvr560s24sliay/random_drop.zip
+$ mv random_drop.zip dataset
+$ cd dataset 
+$ unzip random_drop.zip
+```
+**train dataset**
+```console
+$ python3 train.py --dataset random_drop --nEpochs 50 --cuda
+```
+
+**train dataset**
+```console
+$ python3 test.py --dataset random_drop --model checkpoint/random_drop/netG_model_epoch_50.pth --cuda
+```
+
+**example output**  
+<div align="center">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36575745-e9ecde36-188f-11e8-8614-844accb6a553.png">
+</div>
 
 ## Acknowledgments
 
-This code is a concise implementation of [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). Much easier to understand.
-
-Highly recommend the more completed and organized code [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) by original author junyanz.
+This code is a concise implementation of [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). Much easier to understand. And, transcode python2 coding style to python3.
