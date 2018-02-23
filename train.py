@@ -13,7 +13,7 @@ from   data                   import get_training_set, get_test_set
 import torch.backends.cudnn as cudnn
 
 # Training settings
-parser = argparse.ArgumentParser(description='pix2pix-PyTorch-implementation-of-fork')
+parser = argparse.ArgumentParser(description='a fork of pytorch pix2pix')
 parser.add_argument('--dataset', required=True, help='facades')
 parser.add_argument('--batchSize', type=int, default=1, help='training batch size')
 parser.add_argument('--testBatchSize', type=int, default=1, help='testing batch size')
@@ -22,7 +22,7 @@ parser.add_argument('--input_nc', type=int, default=3, help='input image channel
 parser.add_argument('--output_nc', type=int, default=3, help='output image channels')
 parser.add_argument('--ngf', type=int, default=64, help='generator filters in first conv layer')
 parser.add_argument('--ndf', type=int, default=64, help='discriminator filters in first conv layer')
-parser.add_argument('--lr', type=float, default=0.0002, help='Learning Rate. Default=0.002')
+parser.add_argument('--lr', type=float, default=0.00015, help='Learning Rate. Default=0.002')
 parser.add_argument('--beta1', type=float, default=0.5, help='beta1 for adam. default=0.5')
 parser.add_argument('--cuda', action='store_true', help='use cuda?')
 parser.add_argument('--threads', type=int, default=4, help='number of threads for data loader to use')
