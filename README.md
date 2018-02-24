@@ -104,7 +104,7 @@ $ python3 test.py --dataset font --model checkpoint/font/netG_model_epoch_150.pt
 
 **example output**  
 <div align="center">
-  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36575745-e9ecde36-188f-11e8-8614-844accb6a553.png">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36622539-0fa7be28-1941-11e8-8ffa-06b105a5f4c4.png">
 </div>
 
 
