@@ -1,10 +1,14 @@
 # pytorch-pix2pix
 
+一年ほどまえ、pix2pix系のネットワークを大編集して色々おもしろいことができると言うことを示したのですが、当時はブログ等にポストする際に再現可能なコードを添付することを十分にしていなかったのですが、pytorchにResNetベースのpix2pixが登場し、かなり強力かつネットワークの編集も楽であったので、いくつか再現性とデータセットを再び添付して公開したいと思います  
+
+- 1. 白黒画像に色をつける
+- 2. 不完全な欠損した画像を復元する
+- 3. フォントのスタイル変換
+
 A fork of PyTorch implementation of [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf).
 
 Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
-
-The examples from the paper: 
 
 
 ## preequirements
