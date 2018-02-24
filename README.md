@@ -21,12 +21,22 @@ Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 学習が安定しているかつ、複雑なネットワークにも対応していて、U-netと論文中では言われていますが、コード中ではResisual Blockなどと表現されている通り、入力情報を忘れないように細工をする仕組みが十分に入っていることがあるようです  
 
 <div align="center">
-  <img width="400px" src="https://user-images.githubusercontent.com/4949982/36623118-4f5fa46e-1945-11e8-8774-73e70f81873a.png">
+  <img width="300px" src="https://user-images.githubusercontent.com/4949982/36623118-4f5fa46e-1945-11e8-8774-73e70f81873a.png">
 </div>
 
 目的関数の設計については古典的な普通の表現を古典的な距離とGANでの距離のハイブリッドになっていて、古典距離はブラー（画像のボケ）を防ぐ効果が期待できます  
-
-
+<div align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/36623162-abecf57e-1945-11e8-99bd-07f16c746f9e.png">
+</div>
+GANの距離と
+<div align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/36623168-b0f8de52-1945-11e8-836d-e9d216ab42eb.png">
+</div>
+古典的な距離を
+<div align="center">
+  <img width="200px" src="https://user-images.githubusercontent.com/4949982/36623174-b51eb9d4-1945-11e8-9f78-0d509fe60fa9.png">
+</div>
+くっつけます
 
 ## preequirements
 
