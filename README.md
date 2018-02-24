@@ -48,7 +48,7 @@ $ unzip grayscale.zip
 $ python3 train.py --dataset grayscale --nEpochs 100 --cuda
 ```
 
-**train dataset**
+**predict dataset**
 ```console
 $ python3 test.py --dataset grayscale --model checkpoint/grayscale/netG_model_epoch_100.pth --cuda
 ```
@@ -72,7 +72,7 @@ $ unzip random_drop.zip
 $ python3 train.py --dataset random_drop --nEpochs 50 --cuda
 ```
 
-**train dataset**
+**predict dataset**
 ```console
 $ python3 test.py --dataset random_drop --model checkpoint/random_drop/netG_model_epoch_50.pth --cuda
 ```
@@ -81,6 +81,32 @@ $ python3 test.py --dataset random_drop --model checkpoint/random_drop/netG_mode
 <div align="center">
   <img width="450px" src="https://user-images.githubusercontent.com/4949982/36575745-e9ecde36-188f-11e8-8614-844accb6a553.png">
 </div>
+
+### フォントのスタイルの変換を行う
+人間が習字で書いたデータセットに対して、Takao Fontと対応させて、新規フォントを作るという発想です
+
+**Download** 
+```console
+$ https://www.dropbox.com/s/owee6hxopnr4dpo/font.zip
+$ mv font.zip dataset
+$ cd dataset 
+$ unzip font.zip
+```
+**train dataset**
+```console
+$ python3 train.py --dataset font --nEpochs 150 --cuda
+```
+
+**predict dataset**
+```console
+$ python3 test.py --dataset font --model checkpoint/font/netG_model_epoch_150.pth --cuda
+```
+
+**example output**  
+<div align="center">
+  <img width="450px" src="https://user-images.githubusercontent.com/4949982/36575745-e9ecde36-188f-11e8-8614-844accb6a553.png">
+</div>
+
 
 ## Acknowledgments
 
