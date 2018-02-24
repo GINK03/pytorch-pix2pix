@@ -15,6 +15,13 @@ A fork of PyTorch implementation of [Image-to-Image Translation Using Conditiona
 Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 
 
+## Update 
+2016年12月　時点のものの論文ですが、学習が安定しているかつ、複雑なネットワークにも対応していて、U-netと論文中では言われていますが、コード中ではResisual Blockなどと表現されている通り、入力情報を忘れないように細工をする仕組みが十分に入っていることがあるようです  
+
+目的関数の設計については古典的な普通の表現を古典的な距離とGANでの距離のハイブリッドになっていて、古典距離はブラー（画像のボケ）を防ぐ効果が期待できます  
+
+
+
 ## preequirements
 
 - Python3 with numpy
