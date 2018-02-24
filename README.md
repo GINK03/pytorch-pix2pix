@@ -144,6 +144,6 @@ $ python3 test.py --dataset font --model checkpoint/font/netG_model_epoch_150.pt
 </div>
 
 
-## Acknowledgments
-
-This code is a concise implementation of [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix). Much easier to understand. And, transcode python2 coding style to python3.
+## 参考  
+- [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix)
+- [Image-to-Image Translation with Conditional Adversarial Networks](https://arxiv.org/abs/1611.07004)
