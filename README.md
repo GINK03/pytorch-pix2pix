@@ -16,9 +16,9 @@ Based on [pix2pix](https://phillipi.github.io/pix2pix/) by Isola et al.
 
 
 ## Update 
-初版は2016年12月時点の論文ですが、2017年12月にもarXivにversion2が投稿されています。  
+Image to Imageの初版は2016年12月時点の論文ですが、2017年12月にもarXivにversion2が投稿されています。  
 
-学習が安定しているかつ、複雑なネットワークにも対応していて、U-netと論文中では言われていますが、コード中ではResisual Blockなどと表現されている通り、入力情報を忘れないように細工をする仕組みが十分に入っていることがあるようです  
+学習が安定しているかつ、複雑なネットワークにも対応していて、U-netと論文中では言われていますが、コード中ではResisual Blockなどと表現されており、入力情報を忘れないように細工をする仕組みが十分に入っていることがあるようです（経験的にこのネットワークはコンピュータリソースが十分にあれば巨大なネットワークでも学習できます）  
 
 <div align="center">
   <img width="300px" src="https://user-images.githubusercontent.com/4949982/36623118-4f5fa46e-1945-11e8-8774-73e70f81873a.png">
