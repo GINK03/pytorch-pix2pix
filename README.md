@@ -123,7 +123,7 @@ $ python3 test.py --dataset random_drop --model checkpoint/random_drop/netG_mode
 
 **Download** 
 ```console
-$ https://www.dropbox.com/s/owee6hxopnr4dpo/font.zip
+$ wget https://www.dropbox.com/s/owee6hxopnr4dpo/font.zip
 $ mv font.zip dataset
 $ cd dataset 
 $ unzip font.zip
